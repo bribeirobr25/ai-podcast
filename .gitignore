@@ -1,0 +1,15 @@
+# Secrets and local runtime
+.env
+.env.*
+!.env.example
+node_modules/
+guests/
+*.webm
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.log
+.DS_Store
+__pycache__/
+.venv/
