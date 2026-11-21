@@ -36,6 +36,6 @@ Usar [protocolo de experimentos](EXPERIMENTOS.md), registrar testes negativos ta
 
 ## Bloqueios e riscos
 
-Acesso não verificado ao código atual do Mac, SDK Anam histórico, dependências e segurança de endpoints, falta de evidência real de gravação/memória, sistema de áudio móvel possivelmente incompatível e direitos comerciais/consentimento ainda não aprovados. O `main` público não tem CI nem proteção; `.gitignore` não substitui varredura de segredos.
+Acesso não verificado ao código atual do Mac, SDK Anam histórico, dependências, recusa não aplicada no servidor e segurança de endpoints, falta de evidência real de gravação/memória, sistema de áudio móvel possivelmente incompatível e direitos comerciais/consentimento ainda não aprovados. O `main` público não tem CI nem proteção; `.gitignore` não substitui varredura de segredos.
 
 **Princípio de reporte:** distinguir sempre *codificado* / *testado com mock* / *smoke test de API* / *observado em sessão real* / *publicado*.
