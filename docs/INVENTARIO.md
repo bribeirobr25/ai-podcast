@@ -1,32 +1,33 @@
-# BAR podcast · Inventário e proveniência
+# BAR Podcast · Inventário e proveniência (PT)
 
-Inventário do Google Drive em 2026-10-26, após reorganização reversível.
+**Inventário original:** 26/10/2026. **Conferência documental:** 21/11/2026. [English version](en/INVENTORY.md).
 
-## Drive
-- `podcast/piloto/01_DOCUMENTACAO_E_ROTEIROS/`: briefing, roteiro e ficha de avaliação (3 arquivos).
-- `podcast/piloto/02_PACOTES_ORIGINAIS/`: três versões ZIP do protótipo e dois incrementos TGZ (5 arquivos).
-- `podcast/piloto/03_HISTORICO_E_REFERENCIAS/`: texto da discussão sobre o formato e o salão (1 arquivo).
-- `podcast/inspiracao/01_INSIDEAI_TRANSCRICOES/`: 12 transcrições em TXT de vídeos do canal InsideAI.
+## Drive do projeto: 21 arquivos originais
 
-**Total localizado no Drive:** 21 arquivos originais (9 do piloto + 12 de inspiração). Nenhum arquivo original foi excluído, substituído ou republicado.
+| Pasta | Conteúdo | Quantidade |
+|---|---|---:|
+| `podcast/piloto/01_DOCUMENTACAO_E_ROTEIROS/` | `I_GUEST_PODCAST_PROJECT_BRIEF_Pre-v0.1.md`, `roteiro-piloto.md`, `ficha-avaliacao.md` | 3 |
+| `podcast/piloto/02_PACOTES_ORIGINAIS/` | `ai-guest-podcast.zip`, `ai-guest-podcast (1).zip`, `ai-guest-podcast (2).zip`, `painel-update.tgz`, `roteiro-update.tgz` | 5 |
+| `podcast/piloto/03_HISTORICO_E_REFERENCIAS/` | `PastedText.txt` | 1 |
+| `podcast/inspiracao/01_INSIDEAI_TRANSCRICOES/` | `video1.txt` a `video12.txt` | 12 |
 
-## Evolução dos pacotes históricos
-- `ai-guest-podcast.zip`: protótipo inicial.
-- `ai-guest-podcast (1).zip`: versão intermediária com memória/permissões.
-- `ai-guest-podcast (2).zip`: versão posterior com PT/EN.
-- `painel-update.tgz`: incremento do painel web.
-- `roteiro-update.tgz`: incremento dos roteiros, fichas e documentação.
+O Drive foi organizado em 26/10, sem excluir os originais. A enumeração acima é um inventário datado, não uma sincronização automática.
 
-A ordem acima provém do histórico de desenvolvimento. A combinação do último ZIP e dos dois TGZ é uma **reconstrução documental**, não uma prova de identidade com a pasta atual do Mac.
+## Ordem e escopo do código
 
-## Divergências que precisam permanecer explícitas
-Dois anexos da conversa **não estavam presentes** nas duas pastas verificadas do Drive em 2026-10-26:
-- `Texto colado.txt` (transcrição extensa de conversas anteriores).
-- `della-berlin-dashboard-v1.zip` (artefato de dashboard de outro projeto).
+1. `ai-guest-podcast.zip`: base inicial.
+2. `ai-guest-podcast (1).zip`: acrescenta memória e contratos de participação.
+3. `ai-guest-podcast (2).zip`: organiza PT/EN.
+4. `painel-update.tgz`: traz dashboard e atualizações associadas.
+5. `roteiro-update.tgz`: traz roteiro e ficha de avaliação em PT/EN.
 
-Não foram adicionados automaticamente ao repositório público nem misturados ao acervo do piloto.
+A montagem do item 3 com os itens 4 e 5 é uma **reconstrução para inspeção**. Não garante equivalência com o diretório local atual do Mac. **O GitHub ainda não contém esses fontes.**
 
-## Diretriz de publicação
-- Código próprio validado e documentos editoriais aprovados: versionar no GitHub quando a origem estiver clara.
-- Pacotes históricos e mídias de produção: manter no Drive.
-- Transcrições de terceiros: manter como material de referência, sem espelhamento público integral no GitHub.
+## Proveniência especial
+
+- `PastedText.txt` no Drive é uma **proposta gerada por um modelo** defendendo a ideia de salão/mesa redonda, seguida de discussão. Não comprova preferências subjetivas da IA nem torna o salão uma funcionalidade aprovada.
+- `Texto colado.txt`, anexo nesta conversa, contém texto extenso de interações anteriores do projeto, inclusive relatos de testes. **Não foi localizado nas pastas do Drive verificadas**; não publicar integralmente em GitHub público.
+- `della-berlin-dashboard-v1.zip` é de outro projeto e também não foi localizado no Drive do podcast. **Não misturar**.
+- As 12 transcrições InsideAI são **fontes de pesquisa de terceiros**: resumir aprendizados sem republicar os arquivos na íntegra.
+
+**Uso dos ambientes:** Drive mantém pacotes/áudios/transcrições e histórico; GitHub público mantém documentação aprovada e, futuramente, **código próprio auditado**. Novos anexos exigem inventário por origem, sem supor que estejam sincronizados.
