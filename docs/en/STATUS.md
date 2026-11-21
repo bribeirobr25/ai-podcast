@@ -36,6 +36,6 @@ Follow [experiment protocol](EXPERIMENTS.md). Keep negative results and costs. *
 
 ## Blockers and risks
 
-The current Mac codebase is inaccessible here; older source has dependency, Anam SDK and unauthenticated studio endpoint risks; no proven live microphone/avatar/recording/memory chain; same-device mobile audio contention is possible; publication/consent rights remain unverified. Public `main` has no CI or branch protection; `.gitignore` alone is not a secrets defense.
+The current Mac codebase is inaccessible here; older source has dependency, Anam SDK, non-enforced refusal gate and unauthenticated studio endpoint risks; no proven live microphone/avatar/recording/memory chain; same-device mobile audio contention is possible; publication/consent rights remain unverified. Public `main` has no CI or branch protection; `.gitignore` alone is not a secrets defense.
 
 **Reporting rule:** always separate **coded / mock-tested / real API smoke-tested / live-session observed / published**.
