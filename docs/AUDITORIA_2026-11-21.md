@@ -50,6 +50,8 @@ O produto a validar é a **qualidade da conversa com convidados de IA recorrente
 | F17 | Média | `main` não protegida, sem CI e LICENSE; `.gitignore` insuficiente contra vazamentos | V | Recomendação de revisão, scans e critérios antes de importar código |
 | F18 | Baixa | Inventário não distinguia suficientemente anexos externos ao Drive | V | Confirmar 21 originais no Drive; `Texto colado.txt` pertence à conversa; ZIP Della é de outro projeto |
 | F19 | Baixa | Preços, limites, modelos e documentação de fornecedores podem estar antigos | H+U | Não tratar números históricos como contrato atual |
+| F21 | Alta | Pré-entrevista registra recusa mas servidor não impõe essa decisão | V | `pre-interview.js` reconhece `accepts_invitation === false`, porém `server.js` exige apenas que exista persona. Adicionar bloqueio no servidor antes de declarar recusa tecnicamente aplicada. |
+| F22 | Média | App de voz pronto não preserva automaticamente voz/avatar escolhidos pela IA ou identidade entre fornecedores | V+P | Testar conversa primeiro; documentar voz e identidade configuradas por humanos e avaliar depois a proveniência das escolhas. |
 | F20 | Média | Falta medir o diálogo real entre duas IAs | V+P | Adicionar áudio recíproco, tomada de turnos, latência, revisão não editada e audiência |
 
 ## 4. O que foi testado de verdade?
@@ -66,6 +68,8 @@ O produto a validar é a **qualidade da conversa com convidados de IA recorrente
 | Código atual do Mac igual ao ZIP histórico | **U** | sem acesso à máquina |
 | Memória de convidada entre dois episódios reais | **U** | só fluxo simulado/histórico |
 | Direitos de publicação e gravação liberados | **U** | pendente de verificação |
+
+**Ressalva de implementação:** o `finalize()` da pré-entrevista reconhece recusa (`accepts_invitation === false`), mas `server.js` não impede abrir sessão de uma persona recusante; foi identificado em inspeção de código, não em exploração real.
 
 **Correção de precisão:** é incorreto dizer que *nenhuma* API real foi sequer testada, pois há relato de smoke tests. Também seria incorreto dizer que o podcast já funcionou com API, avatar e gravação ponta a ponta.
 
