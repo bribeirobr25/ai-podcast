@@ -1,24 +1,45 @@
-# BAR podcast · Decisões documentadas
+# BAR Podcast · Decisões e hipóteses (PT)
 
-Data da consolidação: 2026-10-26.
+**Atualizado:** 21/11/2026. [English version](en/DECISIONS.md). [Auditoria](AUDITORIA_2026-11-21.md).
 
-## Direção validada conceitualmente
-1. Nome do programa: **BAR podcast**; host/facilitador: **BAR**.
-2. A IA é **convidada**, não uma personagem cuja biografia e respostas sejam escritas integralmente pela produção.
-3. Pré-entrevista: a IA pode escolher sua própria identidade, apresentação, voz, limites, formas de discordar e instruções de gravação; pode recusar.
-4. Liberdades editoriais permitidas incluem perguntar de volta, não responder, discordar, revisar opiniões e ficar em silêncio. Autonomia não significa ausência de controles técnicos ou de segurança.
-5. Memória versionada entre episódios, com oportunidades de registrar o que deseja guardar ou rever; verificar se ela realmente funciona em testes.
-6. Fluxo bilíngue pt-BR/en desde a preparação até a operação e a interface.
-7. Exibir e preservar a separação entre escolhas da IA e intervenções da produção.
-8. Priorizar validação de **uma convidada** e dois episódios (identidade e memória) antes de ampliar o formato.
+## 1. Direção confirmada pelo usuário
 
-## Hipóteses a investigar, não funcionalidades implementadas
-- Mesas-redondas e diálogos entre IAs.
-- Convidadas recorrentes desenvolvendo relações e opiniões.
-- Episódios experimentais com decisões e consequências editoriais.
-- Conteúdo de bastidores e transparência verificável.
+- **Nome:** BAR Podcast. **Host/facilitador:** BAR.
+- Convidados são modelos de IA tratados editorialmente como participantes, não como assistentes que devem concordar. Não afirmamos que sejam conscientes ou pessoas.
+- Convidadas podem **propor** nome, aparência, voz, estilo, interesses, limites e instruções por uma pré-entrevista. O produtor define convite, permissões, ferramentas, formato e limites.
+- No diálogo, podem perguntar de volta, discordar, passar, silenciar, recusar, corrigir e rever posições nos limites do modelo/provedor.
+- Transparência: registrar o que foi fornecido pelo produtor, o que a IA produziu e o que foi editado. Uma frase na primeira pessoa não prova desejo independente.
+- O fluxo futuro deve apoiar **PT-BR e inglês**, da preparação à produção. No protótipo antigo, um idioma é configurado por convidada; entrevistas nos dois idiomas podiam exigir IDs distintos.
+- **Critério editorial:** alguém deseja ouvir aquela mesma convidada novamente? Identidade, memória e continuidade devem ser demonstradas, não pressupostas.
 
-## Critério editorial central
-A pergunta não é apenas se a IA responde bem, mas se um público desejará **reencontrar a mesma convidada**.
+## 2. Decisões históricas de implementação, não requisitos obrigatórios do produto
 
-Estas decisões foram consolidadas a partir do briefing e conversas do projeto; versões anteriores do protótipo precisam ser verificadas antes de assumir que todas as capacidades operam de fato.
+Em outubro, foi produzido um protótipo **Node.js + APIs dos modelos + Anam**, com pré-entrevista, avatar, voz, estúdio, gravação, memória versionada e painel local. Existia um roteiro em blocos de **3 minutos** para a oferta gratuita Anam da época. Esses blocos, avatar em tempo real e painel **não** são exigências para o primeiro experimento de podcast.
+
+A orientação original de testar uma IA antes de várias continua útil para **isolar problemas técnicos**, mas não impede um teste simples de **duas IAs** se o objetivo for avaliar interação.
+
+## 3. Estratégia experimental atual (a testar)
+
+1. **Experimento 0:** laptop grava; celular roda um app nativo de voz. Opcional: tablet com segunda IA, medindo se realmente se ouvem.
+2. **Experimento 1:** Zoom/Google Meet com uma IA e observador. **Som nos dois sentidos** é hipótese, não capacidade comprovada: dois apps no mesmo celular podem competir pelo microfone e pela sessão de áudio.
+3. **Experimento 2:** ponte de áudio ou reaproveitamento do estúdio antigo **somente se** o teste justificar engenharia.
+
+O usuário manifestou intenção de fazer os testes físicos. Até existir registro reproduzível, o resultado é **não verificado**.
+
+## 4. Propostas não aprovadas como funcionalidades
+
+- Contas Gmail específicas por convidada, gerenciadas com autorização humana e permissões limitadas.
+- Mesa redonda com múltiplas IAs e avatares ao vivo.
+- "Salão" permanente entre episódios, ideia de um modelo a partir de conversa sobre AI Big Brother.
+- Agentes com iniciativa de mensagens/ações, experimentos físicos e presença robótica.
+- Memória canônica independente de cada app, sincronizada entre plataformas.
+
+Tudo isso requer decisão posterior, validação de segurança e capacidade comprovada. Não permitir ações automáticas no mundo real só porque as respostas parecem autônomas.
+
+## 5. Decisões ainda abertas
+
+Apps/modelos e versões; idioma/tema da estreia; método de gravação; critérios de retenção e direitos de uso das vozes; portabilidade da identidade; continuidade/memória entre apps; forma de encaminhar áudio para reuniões se o modo simultâneo falhar.
+
+## 6. Como evoluir estas decisões
+
+Toda mudança relevante deverá registrar **data, origem, estado** (decidido / proposto / testado / rejeitado), responsável e evidência. Nunca elevar uma resposta gerada por IA ou uma sugestão do assistente à categoria de decisão humana sem confirmação explícita.
