@@ -1,15 +1,36 @@
-# Secrets and local runtime
+# BAR Podcast: local configuration and private material
 .env
 .env.*
 !.env.example
-node_modules/
-guests/
-*.webm
-*.mp4
-*.mov
-*.wav
-*.mp3
+*.pem
+*.p12
+*.pfx
+*.key
 *.log
+node_modules/
+dist/
+coverage/
+.cache/
+tmp/
 .DS_Store
 __pycache__/
 .venv/
+
+# Guest profiles, memories, sessions, recordings and exports are private by default.
+guests/
+**/guests/
+recordings/
+exports/
+*.webm
+*.mp4
+*.mov
+*.mkv
+*.wav
+*.aiff
+*.mp3
+*.m4a
+*.aac
+*.flac
+*.ogg
+
+# NOTE: .gitignore is not a secrets scanner and cannot undo prior commits.
