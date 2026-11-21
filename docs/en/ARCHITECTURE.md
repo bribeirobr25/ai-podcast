@@ -39,6 +39,7 @@ Reconstruction reviewed: `ai-guest-podcast (2).zip` + `painel-update.tgz` + `rot
 - `dashboard.js` binds `127.0.0.1` explicitly; this does **not** make studio endpoints secure.
 - The studio imports `@anam-ai/js-sdk@4.27.1` from CDN; provider compatibility and rights require new checks.
 - Browser `MediaRecorder`, file downloads and multi-block recording have no demonstrated end-to-end recovery/quality proof.
+- The pre-interview records `accepts_invitation === false`, but the server does not explicitly block a declined guest from being served. Enforce this gate before claiming end-to-end refusal support.
 - `lib/memory.js` asks for **800 words** but does not enforce the length, nor demonstrate correct real multi-episode continuity.
 - `scripts/selftest.js` uses a **mock** provider, not real API/voice/avatar integration.
 - The current Mac source tree has not been compared with archived files.
