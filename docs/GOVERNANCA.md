@@ -18,6 +18,8 @@ Para cada convidada registrar:
 3. **Ferramentas digitais limitadas:** pode preparar respostas ou ações aprovadas, com controle humano.
 4. **Ações externas independentes:** **fora do MVP**, nunca autorizadas por padrão.
 
+**Recusa operacional:** o sistema deve impedir a ativação e publicação de uma convidada que recusou o convite, não apenas registrar o campo em um JSON. O código antigo ainda precisa desse bloqueio no servidor.
+
 Não divulgar nível 3 ou 4 quando só houve demonstração do nível 1 ou 2.
 
 ## Privacidade, gravação e consentimento
