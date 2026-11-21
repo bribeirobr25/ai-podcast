@@ -18,6 +18,8 @@ For each guest, record:
 3. **Bounded digital tools:** can draft messages or schedule approved interactions through explicit permissions and human control.
 4. **Independent external actions:** **not part of this MVP** and never granted by default.
 
+**Operational refusal:** a declined invitation must block guest activation and publication, rather than just set a field in JSON. The historical studio server still needs this enforcement.
+
 Do not advertise tier 3 or 4 when only tier 1 or 2 has been demonstrated.
 
 ## Privacy, recording and consent
