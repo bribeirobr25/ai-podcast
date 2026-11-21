@@ -39,6 +39,7 @@ Reconstituição para inspeção: `ai-guest-podcast (2).zip` + `painel-update.tg
 - `dashboard.js` usa bind explícito `127.0.0.1`, mas o estúdio não; não tratar os dois como equivalentes.
 - Browser importa `@anam-ai/js-sdk@4.27.1` de CDN. Compatibilidade e contratos do provedor podem ter mudado.
 - `MediaRecorder` e downloads do navegador precisam teste de recuperação, sincronização e qualidade.
+- A pré-entrevista registra `accepts_invitation === false`, mas o servidor não impõe um bloqueio técnico explícito para a convidada que recusou. Corrigir antes de afirmar que a recusa é executada ponta a ponta.
 - `lib/memory.js` solicita máximo de **800 palavras** no prompt, mas não valida o tamanho final; não há prova de memória correta entre dois episódios reais.
 - O teste automático usa provider **mock** e não demonstra integração real de voz/avatar/gravação.
 - O arquivo local atual do Mac ainda não foi comparado com este conjunto histórico.
